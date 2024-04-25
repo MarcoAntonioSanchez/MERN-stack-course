@@ -23,3 +23,46 @@ Commando tu install globally is "npm i nodemon -g".
 
 The command to start a project with nodemon watching for changes is "nodemon express-server.js".
 You can set a "script" on the package.json file, under the "scripts" node, with the key "dev" and the value "nodemon express-server.js", so the project can be started with nodemon watching using the "npm run dev" command.
+
+### HTTP REQUEST METHODS
+HTTP = Hypertext Transfer Protocol, specifies a collection of request methods to specify what action is to be performed on a particular resource.
+The must commonly used HTTP request methods are "GET", "POST", "PUT", "PATCH" and "DELETE".
+Others include "HEAD", "CONNECT", "OPTIONS" and "TRACE".
+
+GET request is used to read/retrieve data from a web server.
+POST request is used to send data (file, form data, etc.) to the server.
+PUT and PATCH request's are used to modify the data on the server.
+DELENTE request is used to delete the data on the server.
+
+These are equivalent to the CRUD operations (Create, Read, Update, Delete).
+https://developer.mozilla.org/es/docs/Web/HTTP/Methods
+
+### HTTP RESPONSE STATUS CODES
+Status codes are issued by a server in response to client's request made to the server.
+
+Level 200 (Success)
+200: OK.
+201: Created.
+203: Non-Authoritative Information.
+204: No content.
+
+Level 300
+301: Moved permanently.
+303: See other.
+304: Not modified.
+307: Temporary redirect.
+
+Level 400
+400: Bad request.
+401: Unauthorized.
+403: Forbidden.
+404: Not found.
+409: Conflict.
+
+Level 500
+500: Internal server error (Fear it...).
+501: Not implemented.
+502: Bad gateway.
+503: Service unavailable.
+504: Gateway timeout.
+599: Network timeout.
